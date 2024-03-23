@@ -5,8 +5,8 @@ Main --- Rouse model simulation with uniform friction environment
 MainNUF --- Rouse model simulation with non-uniform friction environment
 These simulation codes are written for Rouse polymer simulations in 2D. To adapt to other dimensions, please see Instruction below.
 
-The codes are mostly commented and are ready to use given that one puts in the **loop configuration file** and the **save path**
-Below are some important instructions for adjusting parameters, boundary conditions, and etc.
+The codes are mostly commented and are ready to use given that one puts in the **loop configuration file** and the **save path**. See Instrctions below.
+Below are some important instructions for adjusting parameters, adaptation for other dimension, input files and etc.
 
 Instructions:
 -
@@ -25,3 +25,6 @@ Instructions:
    (a) The friction coefficient and pring constant needs to be modified according to Section IIE in the paper.
    (b) In the "Main loop" section of the code, add in (or remove) one dimension for the loop iteration (dmrouse) and saved positions (y1, y2, z1, z2, dimPhyWalk21, dimPhyWalk31, etc.)
    (c) Add in (or remove) one dimension in the "MSD calculation" of the code.
+
+4. Loop configuration file and non-uniform friction file
+   --Examples of loop configuration file (rosette_24SMC.mat) and non-uniform friction file (VMu_logn(0,log(2)).mat) are provided in the folder. To use one's own input, please strictly follow the format shown in the example as the codes are written accordingly.
