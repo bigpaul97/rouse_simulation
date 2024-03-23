@@ -1,4 +1,4 @@
-# rouse_simulation
+# Rouse polymer simulation
 
 The MATLAB codes for the Rouse polymer simulation described in the paper can be found here:
 Main --- Rouse model simulation with uniform friction environment
