@@ -20,11 +20,13 @@ load('rosette_24SMC.mat')
 load('VMu_logn(0,log(2)).mat')
 
 
-%% Adjustable parameters
+%% Commonly adjustable parameters
+% (Note: mouse has bead size of 10kb, yeast of 500 bp, 
+% using chromatin compaction fraction of 50bp/nm)
 
 zeta = 1.08e-6; % unmodified friction coefficient (in Ns/m): 1.08e-6 for mouse; 5.4e-8 for yeast
 det = 1; % simulation timestep: 1s for mouse, 0.02s for yeast
-taup_limit = 1e1; % total simulation time, in unit of tau_p (approximately)
+taup_limit = 1e4; % total simulation time, in unit of tau_p (approximately)
 b = 2e-7; % contour length represented by one bead: 2e-7 nm for mouse; 1e-8 for yeast
 bc = 1; % boundary condition: 0, periodic; 1, free; 2, fixed.
 

@@ -14,7 +14,9 @@ rng(traa)
 % Examples of loop configuration file are given
 load('rosette_24SMC.mat') 
 
-%% Adjustable parameters
+%% Commonly adjustable parameters 
+% (Note: mouse has bead size of 10kb, yeast of 500 bp, 
+% using chromatin compaction fraction of 50bp/nm)
 
 zeta = 1.08e-6; % friction coefficient (in Ns/m): 1.08e-6 for mouse; 5.4e-8 for yeast
 det = 1; % simulation timestep: 1s for mouse, 0.02s for yeast
